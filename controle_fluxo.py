@@ -3,6 +3,7 @@ def mostrar_menu():
     print("1 - Contar de 1 até um número")
     print("2 - Calcular média de notas")
     print("3 - Sair")
+    print("4 - Mostrar tabuada")
 
 while True:
     mostrar_menu()
@@ -33,8 +34,19 @@ while True:
             print("Situação: recuperação")
         else:
             print("Situação: reprovado")
+        
     elif opcao == "3":
         print("Encerrando o programa...")
         break
-    else:
-        print("Opção inválida. Tente novamente.")
+        
+    elif opcao == "4":
+        numero = int(input("Digite um número para ver a tabuada: "))
+        
+        for multiplicador in range(1, 11):
+            resultado = numero * multiplicador
+            print(f"{numero} x {multiplicador} = {resultado}")
+            
+        else:
+            print("Opção inválida. Tente novamente.")
+            
+    
